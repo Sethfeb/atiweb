@@ -36,9 +36,9 @@ export default async function EquipmentPage({
   const equipment = await getEquipment()
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">

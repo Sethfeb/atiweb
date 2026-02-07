@@ -20,9 +20,9 @@ export default function NewsDetailClient({ news }: NewsDetailClientProps) {
   const locale = useLocale()
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -59,7 +59,7 @@ export default function NewsDetailClient({ news }: NewsDetailClientProps) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 md:p-12 shadow-xl">
+          <div className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 md:p-12 shadow-xl">
             <div
               className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed"
               dangerouslySetInnerHTML={{ __html: news.content }}

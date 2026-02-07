@@ -8,9 +8,9 @@ export default function CompanyPage() {
   const t = useTranslations('company')
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -41,7 +41,7 @@ export default function CompanyPage() {
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-10 text-center">
               {t('ceo')}
             </h2>
-            <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-10 shadow-xl">
+            <div className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-10 shadow-xl">
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
                 {t('ceoMessage1')}
               </p>
@@ -91,7 +91,7 @@ export default function CompanyPage() {
                     {item.year}
                   </div>
                   <div className="flex-1 pt-1">
-                    <div className="w-4 h-4 bg-primary-600 rounded-full absolute left-6 md:left-8 -ml-2 mt-1 border-4 border-charcoal-900 z-10" />
+                    <div className="w-4 h-4 bg-primary-600 rounded-full absolute left-6 md:left-8 -ml-2 mt-1 border-4 border-charcoal-800 z-10" />
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed">{item.event}</p>
                   </div>
                 </motion.div>
@@ -114,7 +114,7 @@ export default function CompanyPage() {
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-12 text-center">
               {t('network')}
             </h2>
-            <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-10 shadow-xl">
+            <div className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-10 shadow-xl">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                   { key: 'headquarters', city: 'Incheon, South Korea' },
@@ -124,7 +124,7 @@ export default function CompanyPage() {
                 ].map((office, index) => (
                   <div
                     key={index}
-                    className="p-6 bg-charcoal-950 rounded-lg border border-primary-800/10 hover:border-primary-700/30 transition-all hover:shadow-lg"
+                    className="p-6 bg-charcoal-800 rounded-lg border border-primary-800/20 hover:border-primary-700/40 transition-all hover:shadow-lg"
                   >
                     <h3 className="text-xl font-bold text-white mb-3">
                       {t(`offices.${office.key}`)}

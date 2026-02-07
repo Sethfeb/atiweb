@@ -22,7 +22,7 @@ export default function KeyStrengths() {
   ]
 
   return (
-    <section className="py-24 bg-charcoal-950">
+    <section className="py-24 bg-charcoal-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -47,7 +47,7 @@ export default function KeyStrengths() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-charcoal-900 p-10 rounded-xl border border-primary-800/20 hover:border-primary-700/40 hover:shadow-2xl transition-all duration-300 group"
+              className="bg-charcoal-800 p-10 rounded-xl border border-primary-800/20 hover:border-primary-700/40 hover:shadow-2xl transition-all duration-300 group"
             >
               <div className="text-6xl mb-6 group-hover:scale-110 transition-transform duration-300">
                 {strength.icon}

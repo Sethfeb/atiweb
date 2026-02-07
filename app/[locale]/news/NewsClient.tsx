@@ -56,9 +56,9 @@ export default function NewsClient() {
   ]
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -92,7 +92,7 @@ export default function NewsClient() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-6 hover:border-primary-700/40 transition-all duration-300 shadow-lg"
+                className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-6 hover:border-primary-700/40 transition-all duration-300 shadow-lg"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">
@@ -124,7 +124,7 @@ export default function NewsClient() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
+          className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl"
         >
           <h2 className="text-3xl font-bold text-white mb-6">{t('pressReleases')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -133,7 +133,7 @@ export default function NewsClient() {
               .map((item, index) => (
                 <div
                   key={index}
-                  className="p-4 bg-charcoal-950 rounded-lg border border-charcoal-800 hover:border-primary-700/40 transition-colors"
+                  className="p-4 bg-charcoal-800 rounded-lg border border-charcoal-700 hover:border-primary-700/40 transition-colors"
                 >
                   <div className="text-sm text-gray-400 mb-2">{item.date}</div>
                   <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>

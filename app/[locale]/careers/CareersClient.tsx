@@ -38,18 +38,18 @@ export default function CareersClient() {
   ]
 
   const benefits = [
-    { icon: '💰', title: 'Competitive Salary', description: 'Market-competitive compensation packages' },
-    { icon: '🏥', title: 'Health Insurance', description: 'Comprehensive health and dental coverage' },
-    { icon: '📚', title: 'Professional Development', description: 'Training and career growth opportunities' },
-    { icon: '🏖️', title: 'Paid Time Off', description: 'Generous vacation and holiday policies' },
-    { icon: '💼', title: 'Flexible Work', description: 'Work-life balance initiatives' },
-    { icon: '🎯', title: 'Stock Options', description: 'Equity participation programs' },
+    { key: 'salary', icon: '💰', title: 'Competitive Salary', description: 'Market-competitive compensation packages' },
+    { key: 'health', icon: '🏥', title: 'Health Insurance', description: 'Comprehensive health and dental coverage' },
+    { key: 'development', icon: '📚', title: 'Professional Development', description: 'Training and career growth opportunities' },
+    { key: 'pto', icon: '🏖️', title: 'Paid Time Off', description: 'Generous vacation and holiday policies' },
+    { key: 'flexible', icon: '💼', title: 'Flexible Work', description: 'Work-life balance initiatives' },
+    { key: 'stock', icon: '🎯', title: 'Stock Options', description: 'Equity participation programs' },
   ]
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -76,7 +76,7 @@ export default function CareersClient() {
           className="mb-16"
         >
           <h2 className="text-3xl font-bold text-white mb-6">{t('joinUs')}</h2>
-          <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl">
+          <div className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
               {t('joinUsText1')}
             </p>
@@ -101,7 +101,7 @@ export default function CareersClient() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-6 hover:border-primary-700/40 transition-all duration-300 shadow-lg"
+                className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-6 hover:border-primary-700/40 transition-all duration-300 shadow-lg"
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div className="flex-1">
@@ -140,7 +140,7 @@ export default function CareersClient() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-charcoal-900 rounded-xl border border-primary-800/20 shadow-lg"
+                className="p-6 bg-charcoal-800 rounded-xl border border-primary-800/20 shadow-lg"
               >
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {t(`cultureItems.${item.key}.title`)}
@@ -168,10 +168,10 @@ export default function CareersClient() {
               >
                 <div className="text-4xl mb-4">{benefit.icon}</div>
                 <h3 className="text-lg font-semibold text-white mb-2">
-                  {t(`benefitsItems.${benefit.key}.title`)}
+                  {t(`benefitsItems.${benefit.key as string}.title`)}
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  {t(`benefitsItems.${benefit.key}.description`)}
+                  {t(`benefitsItems.${benefit.key as string}.description`)}
                 </p>
               </div>
             ))}

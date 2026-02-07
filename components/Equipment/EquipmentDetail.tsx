@@ -46,9 +46,9 @@ export default function EquipmentDetail({ equipment }: EquipmentDetailProps) {
   const description = equipment.description?.[locale as 'en' | 'ko' | 'zh'] || equipment.description?.en || ''
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -126,14 +126,14 @@ export default function EquipmentDetail({ equipment }: EquipmentDetailProps) {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
+              className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl"
             >
               <h2 className="text-3xl font-bold text-white mb-6">{t('specs')}</h2>
               <div className="space-y-4">
                 {equipment.specifications.map((spec, index) => {
                   const label = spec.label[locale as 'en' | 'ko' | 'zh'] || spec.label.en || ''
                   return (
-                    <div key={index} className="border-b border-charcoal-800 pb-4 last:border-0">
+                    <div key={index} className="border-b border-charcoal-700 pb-4 last:border-0">
                       <div className="text-sm text-gray-400 mb-2 font-medium uppercase tracking-wide">{label}</div>
                       <div className="text-white text-lg font-semibold">{spec.value}</div>
                     </div>

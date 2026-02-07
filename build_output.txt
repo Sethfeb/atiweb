@@ -1,0 +1,577 @@
+
+> ati-corporate-website@1.3.0 build
+> next build
+
+  ▲ Next.js 14.2.35
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/39) ...
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /en/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /en/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /en/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /en/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /en/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /en/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/en/contact". Read more: https://nextjs.org/docs/messages/prerender-error
+
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /zh/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /zh/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /zh/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /zh/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /zh/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /zh/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/zh/contact". Read more: https://nextjs.org/docs/messages/prerender-error
+
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /ko/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /ko/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /ko/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /ko/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /ko/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /ko/contact/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/ko/contact". Read more: https://nextjs.org/docs/messages/prerender-error
+
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+The `locale` parameter in `getRequestConfig` is deprecated, please switch to `await requestLocale`. See https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+    at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+    at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+    at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+
+A `locale` is expected to be returned from `getRequestConfig`, but none was returned. This will be an error in the next major version of next-intl.
+
+See: https://next-intl.dev/blog/next-intl-3-22#await-request-locale
+
+   Generating static pages (9/39) 
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /zh/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /zh/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /zh/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /zh/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /zh/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /zh/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/zh/company". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /en/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /en/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /en/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /en/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /en/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /en/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/en/company". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /ko/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /ko/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /ko/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /ko/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    ... 5 lines matching cause stack trace ...
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+  digest: '3287091669',
+  [cause]: n [Error]: Dynamic server usage: Route /ko/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/819.js:2:49952)
+      at c (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:125495)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121296
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+      at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+      at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+      at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465 {
+    description: "Route /ko/company/ couldn't be rendered statically because it used `headers`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+    digest: 'DYNAMIC_SERVER_USAGE'
+  }
+}
+
+Error occurred prerendering page "/ko/company". Read more: https://nextjs.org/docs/messages/prerender-error
+
+   Generating static pages (19/39) 
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+    at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+    at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+Error: Usage of next-intl APIs in Server Components currently opts into dynamic rendering. This limitation will eventually be lifted, but as a stopgap solution, you can use the `setRequestLocale` API to enable static rendering, see https://next-intl.dev/docs/getting-started/app-router/with-i18n-routing#static-rendering
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:121375
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at get locale [as locale] (/Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122763)
+    at /Users/seth/ati-corporate-website/.next/server/chunks/490.js:1:11599
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:122824
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123596
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+    at /Users/seth/ati-corporate-website/.next/server/chunks/993.js:1:123935
+    at /Users/seth/ati-corporate-website/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:186465
+   Generating static pages (29/39) 
+ ✓ Generating static pages (39/39)
+
+> Export encountered errors on following paths:
+	/[locale]/company/page: /en/company
+	/[locale]/company/page: /ko/company
+	/[locale]/company/page: /zh/company
+	/[locale]/contact/page: /en/contact
+	/[locale]/contact/page: /ko/contact
+	/[locale]/contact/page: /zh/contact

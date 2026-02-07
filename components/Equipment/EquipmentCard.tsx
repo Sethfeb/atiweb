@@ -54,7 +54,7 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group bg-charcoal-900 rounded-xl overflow-hidden border border-primary-800/20 hover:border-primary-700/40 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+      className="group bg-charcoal-800 rounded-xl overflow-hidden border border-primary-800/20 hover:border-primary-700/40 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
     >
       <Link href={`/${locale}/equipment/${equipment.slug.current}`}>
         <div className="relative h-64 overflow-hidden bg-charcoal-800">
@@ -73,7 +73,7 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
               <div className="text-4xl text-gray-600">📷</div>
             </div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-800/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         </div>
         <div className="p-8">
           {equipment.category && (

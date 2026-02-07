@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Luxurious Red Theme
+        // Luxurious Red Theme (더 빨간색 톤)
         primary: {
           50: '#fff1f2',
           100: '#ffe1e3',
@@ -17,25 +17,25 @@ const config: Config = {
           300: '#ffa0a6',
           400: '#ff6b75',
           500: '#ff3d4d',
-          600: '#ed1c2e',
-          700: '#c81e2d', // Main brand color
-          800: '#800020', // Deep Burgundy - Primary
-          900: '#5a0017',
-          950: '#3d000f',
+          600: '#e91e2e', // 더 밝은 빨강
+          700: '#d32f2f', // Main brand color - 더 빨간색
+          800: '#c62828', // 더 빨간색 Primary
+          900: '#b71c1c',
+          950: '#8b0000',
         },
-        // Charcoal Black
+        // Charcoal Black (더 밝게 조정)
         charcoal: {
-          50: '#f6f6f6',
-          100: '#e7e7e7',
-          200: '#d1d1d1',
-          300: '#b0b0b0',
-          400: '#888888',
-          500: '#6d6d6d',
-          600: '#5d5d5d',
-          700: '#4f4f4f',
-          800: '#454545',
-          900: '#1a1a1a', // Deep Charcoal
-          950: '#0a0a0a',
+          50: '#f8f8f8',
+          100: '#e9e9e9',
+          200: '#d4d4d4',
+          300: '#b5b5b5',
+          400: '#909090',
+          500: '#757575',
+          600: '#656565',
+          700: '#575757',
+          800: '#3a3a3a', // 더 밝은 배경
+          900: '#2a2a2a', // 메인 배경 (더 밝게)
+          950: '#1f1f1f', // 가장 어두운 배경 (더 밝게)
         },
         // Metallic Accents
         metallic: {
@@ -49,12 +49,12 @@ const config: Config = {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'hero-overlay': 'linear-gradient(to bottom, rgba(128, 0, 32, 0.85), rgba(26, 26, 26, 0.9))',
-        'gradient-primary': 'linear-gradient(135deg, rgba(128, 0, 32, 0.1) 0%, rgba(26, 26, 26, 0.9) 100%)',
+        'hero-overlay': 'linear-gradient(to bottom, rgba(198, 40, 40, 0.6), rgba(42, 42, 42, 0.85))',
+        'gradient-primary': 'linear-gradient(135deg, rgba(198, 40, 40, 0.1) 0%, rgba(42, 42, 42, 0.9) 100%)',
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(128, 0, 32, 0.3)',
-        'glow-lg': '0 0 40px rgba(128, 0, 32, 0.4)',
+        'glow': '0 0 20px rgba(198, 40, 40, 0.3)',
+        'glow-lg': '0 0 40px rgba(198, 40, 40, 0.4)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

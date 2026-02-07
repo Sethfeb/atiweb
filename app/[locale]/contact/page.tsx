@@ -40,9 +40,9 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
+                  className="w-full px-4 py-3 bg-charcoal-800 border border-primary-800/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-600 transition-colors"
                   placeholder={t('form.namePlaceholder')}
                 />
               </div>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
+                  className="w-full px-4 py-3 bg-charcoal-800 border border-primary-800/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-600 transition-colors"
                   placeholder={t('form.emailPlaceholder')}
                 />
               </div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
+                  className="w-full px-4 py-3 bg-charcoal-800 border border-primary-800/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-primary-600 transition-colors"
                   placeholder={t('form.companyPlaceholder')}
                 />
               </div>
@@ -182,7 +182,7 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl font-bold text-white mb-8">{t('location')}</h2>
-            <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 space-y-6 shadow-xl">
+            <div className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 space-y-6 shadow-xl">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">{t('hq')}</h3>
                 <p className="text-gray-300">

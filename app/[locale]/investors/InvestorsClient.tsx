@@ -23,9 +23,9 @@ export default function InvestorsClient() {
   }
 
   return (
-    <div className="min-h-screen bg-charcoal-950">
+    <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -52,7 +52,7 @@ export default function InvestorsClient() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-1"
           >
-            <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-6 sticky top-24 shadow-xl">
+            <div className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-6 sticky top-24 shadow-xl">
               <h2 className="text-2xl font-bold text-white mb-4">{t('stockInfo')}</h2>
               <div className="space-y-4">
                 <div>
@@ -63,7 +63,7 @@ export default function InvestorsClient() {
                   <div className="text-sm text-gray-400 mb-1">{t('exchange')}</div>
                   <div className="text-lg text-white">{stockInfo.exchange}</div>
                 </div>
-                <div className="pt-4 border-t border-charcoal-800">
+                <div className="pt-4 border-t border-charcoal-700">
                   <div className="text-sm text-gray-400 mb-1">{t('currentPrice')}</div>
                   <div className="text-3xl font-bold text-white">{stockInfo.currentPrice} KRW</div>
                   <div className="text-green-400 mt-2">
@@ -81,7 +81,7 @@ export default function InvestorsClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
+              className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl"
             >
               <h2 className="text-3xl font-bold text-white mb-6">{t('overview')}</h2>
               <div className="prose prose-invert max-w-none">
@@ -99,7 +99,7 @@ export default function InvestorsClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
+              className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl"
               id="reports"
             >
               <h2 className="text-3xl font-bold text-white mb-6">{t('financialReports')}</h2>
@@ -107,7 +107,7 @@ export default function InvestorsClient() {
                 {financialReports.map((report, index) => (
                   <div
                     key={index}
-                    className="flex items-center justify-between p-4 bg-charcoal-950 rounded-lg border border-charcoal-800 hover:border-primary-700/40 transition-colors"
+                    className="flex items-center justify-between p-4 bg-charcoal-800 rounded-lg border border-charcoal-700 hover:border-primary-700/40 transition-colors"
                   >
                     <div>
                       <div className="text-lg font-semibold text-white">
@@ -128,7 +128,7 @@ export default function InvestorsClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
+              className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl"
             >
               <h2 className="text-3xl font-bold text-white mb-6">{t('governance')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -140,7 +140,7 @@ export default function InvestorsClient() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="p-4 bg-charcoal-950 rounded-lg border border-charcoal-800"
+                    className="p-4 bg-charcoal-800 rounded-lg border border-charcoal-700"
                   >
                     <h3 className="text-lg font-semibold text-white mb-2">
                       {t(`governanceItems.${item.key}.title`)}
@@ -158,7 +158,7 @@ export default function InvestorsClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
+              className="bg-charcoal-800 rounded-xl border border-primary-800/20 p-8 shadow-xl"
             >
               <h2 className="text-3xl font-bold text-white mb-6">{t('contact')}</h2>
               <div className="space-y-4">

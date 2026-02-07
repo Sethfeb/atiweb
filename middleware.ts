@@ -12,5 +12,5 @@ export default createMiddleware({
 
 export const config = {
   // 모든 경로에서 미들웨어 실행 (정적 파일 제외)
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!api|_next|_vercel|studio|.*\\..*).*)']
 }
