@@ -8,6 +8,11 @@
     "careers": "채용",
     "contact": "문의하기"
   },
+  "languages": {
+    "en": "영어",
+    "ko": "한국어",
+    "zh": "중국어"
+  },
   "home": {
     "hero": {
       "title": "고급 반도체 검사 및 계측 장비",
@@ -31,42 +36,173 @@
   },
   "company": {
     "title": "회사 소개",
+    "subtitle": "반도체 검사 및 계측의 미래를 선도합니다",
     "ceo": "CEO 인사말",
+    "ceoMessage1": "ATI는 20년 이상 반도체 검사 및 계측 기술의 최前沿에 서 있습니다. 혁신과 우수성에 대한 우리의 헌신은 전 세계 주요 반도체 제조업체들의 신뢰받는 파트너가 되었습니다.",
+    "ceoMessage2": "우리는 산업의 진화하는 needs를 충족시키는 최첨단 솔루션을 제공하기 위해 지속적으로 연구개발에 투자하고 있습니다. 전 세계 전문가 네트워크는 고객이 최고 수준의 지원과 서비스를 받을 수 있도록 보장합니다.",
+    "ceoMessage3": "미래를 내다보며, 우리는 정밀성, 혁신, 그리고 품질에 대한 확고한 헌신을 통해 반도체 제조를 발전시키는 데 전념하고 있습니다.",
     "history": "연혁",
-    "network": "글로벌 네트워크"
+    "historyEvents": {
+      "2000": "인천에서 회사 설립",
+      "2005": "글로벌 시장으로 확장",
+      "2010": "차세대 검사 시스템 출시",
+      "2015": "주요 시장에 사무소 개설",
+      "2020": "업계 최고 수준의 정밀도 달성",
+      "2024": "AI 기반 솔루션 혁신 지속"
+    },
+    "network": "글로벌 네트워크",
+    "networkDescription": "글로벌 네트워크를 통해 고객이 어디에 있든 서비스를 제공할 수 있습니다.",
+    "offices": {
+      "headquarters": "본사",
+      "asiaPacific": "아시아 태평양",
+      "northAmerica": "북미",
+      "europe": "유럽"
+    }
   },
   "equipment": {
     "title": "우리 장비",
+    "subtitle": "고급 반도체 검사 및 계측 솔루션",
     "viewDetails": "상세 보기",
     "specs": "사양",
-    "download": "PDF 다운로드"
+    "download": "PDF 다운로드",
+    "noEquipment": "현재 사용 가능한 장비가 없습니다. 나중에 다시 확인해 주세요."
   },
   "investors": {
     "title": "투자자 정보",
+    "subtitle": "주주를 위한 장기적 가치 창출에 전념합니다",
     "overview": "개요",
+    "overviewText1": "ATI는 지속 가능한 성장을 제공하고 주주를 위한 장기적 가치를 창출하는 데 전념하고 있습니다. 투자자 커뮤니티와 투명한 소통을 유지하며 재무 성과와 전략적 이니셔티브에 대한 시기적절한 업데이트를 제공합니다.",
+    "overviewText2": "우리의 강력한 재무 상태와 혁신적인 기술 포트폴리오는 반도체 검사 및 계측 시장에서 지속적인 성장을 위한 좋은 위치에 있습니다.",
     "financialReports": "재무 보고서",
     "stockInfo": "주식 정보",
+    "stockSymbol": "주식 심볼",
+    "exchange": "거래소",
+    "currentPrice": "현재 주가",
     "governance": "기업 지배구조",
+    "governanceItems": {
+      "board": {
+        "title": "이사회",
+        "description": "경험이 풍부한 이사회가 전략적 감독을 제공합니다"
+      },
+      "audit": {
+        "title": "감사위원회",
+        "description": "재무 무결성 및 규정 준수 보장"
+      },
+      "compensation": {
+        "title": "보상위원회",
+        "description": "임원 보상 감독"
+      },
+      "nominating": {
+        "title": "임명위원회",
+        "description": "이사회 구성 및 지배구조"
+      }
+    },
     "events": "이벤트 및 발표",
-    "contact": "IR 문의"
+    "contact": "IR 문의",
+    "irEmail": "투자자 관계",
+    "phone": "전화",
+    "downloadPdf": "PDF 다운로드",
+    "reportTypes": {
+      "annual": "연간 보고서",
+      "quarterly": "분기 보고서"
+    },
+    "date": "날짜"
   },
   "news": {
     "title": "뉴스 및 보도자료",
+    "subtitle": "ATI의 최신 뉴스와 발표를 확인하세요",
     "latest": "최신 뉴스",
     "pressReleases": "보도자료",
-    "readMore": "더 보기"
+    "readMore": "더 보기",
+    "backToNews": "← 뉴스로 돌아가기"
   },
   "careers": {
     "title": "채용",
+    "subtitle": "반도체 검사 기술의 미래를 함께 만들어가세요",
     "joinUs": "우리 팀에 합류하세요",
+    "joinUsText1": "ATI는 반도체 검사 및 계측 기술의 최前沿에 있는 역동적이고 혁신적인 회사입니다. 기술과 혁신에 열정적인 재능 있는 인재를 찾고 있습니다.",
+    "joinUsText2": "우리 팀에 합류하여 창의성, 협업, 우수성을 중시하는 회사의 일원이 되세요. 지원적인 업무 환경, 경쟁력 있는 보상, 전문적 성장 기회를 제공합니다.",
     "openPositions": "채용 공고",
+    "applyNow": "지원하기",
     "culture": "우리의 문화",
-    "benefits": "복리후생"
+    "cultureItems": {
+      "innovation": {
+        "title": "혁신",
+        "description": "복잡한 도전에 대한 창의적 사고와 혁신적인 솔루션을 장려합니다."
+      },
+      "collaboration": {
+        "title": "협업",
+        "description": "팀워크와 열린 소통이 우리 성공의 핵심입니다."
+      },
+      "excellence": {
+        "title": "우수성",
+        "description": "제품 개발부터 고객 서비스까지 모든 분야에서 우수성을 추구합니다."
+      },
+      "growth": {
+        "title": "성장",
+        "description": "직원들의 전문적 발전과 경력 성장에 투자합니다."
+      }
+    },
+    "benefits": "복리후생",
+    "benefitsItems": {
+      "salary": {
+        "title": "경쟁력 있는 급여",
+        "description": "시장 경쟁력 있는 보상 패키지"
+      },
+      "health": {
+        "title": "건강 보험",
+        "description": "포괄적인 건강 및 치과 보장"
+      },
+      "development": {
+        "title": "전문 개발",
+        "description": "교육 및 경력 성장 기회"
+      },
+      "pto": {
+        "title": "유급 휴가",
+        "description": "관대한 휴가 및 공휴일 정책"
+      },
+      "flexible": {
+        "title": "유연한 근무",
+        "description": "워라밸 이니셔티브"
+      },
+      "stock": {
+        "title": "스톡 옵션",
+        "description": "주식 참여 프로그램"
+      }
+    }
   },
   "contact": {
     "title": "문의하기",
+    "subtitle": "문의 및 지원을 위해 저희 팀에 연락하세요",
     "inquiry": "문의 양식",
     "location": "위치",
-    "hq": "본사"
+    "hq": "본사",
+    "email": "이메일",
+    "phone": "전화",
+    "businessHours": "영업 시간",
+    "businessHoursText": "월요일 - 금요일: 오전 9시 - 오후 6시 (KST)",
+    "globalOffices": "글로벌 사무소",
+    "form": {
+      "name": "이름",
+      "namePlaceholder": "이름을 입력하세요",
+      "email": "이메일",
+      "emailPlaceholder": "your.email@example.com",
+      "company": "회사명",
+      "companyPlaceholder": "회사명을 입력하세요",
+      "subject": "제목",
+      "subjectPlaceholder": "제목을 선택하세요",
+      "subjectOptions": {
+        "equipment": "장비 문의",
+        "support": "기술 지원",
+        "sales": "영업 문의",
+        "other": "기타"
+      },
+      "message": "메시지",
+      "messagePlaceholder": "메시지를 입력하세요...",
+      "submit": "메시지 보내기",
+      "submitting": "전송 중...",
+      "success": "감사합니다! 메시지가 성공적으로 전송되었습니다.",
+      "error": "오류가 발생했습니다. 나중에 다시 시도해 주세요."
+    }
   }
 }

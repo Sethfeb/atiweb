@@ -70,7 +70,7 @@ export default function NewsClient() {
               {t('title')}
             </h1>
             <p className="text-xl text-gray-300">
-              Stay updated with the latest news and announcements from ATI
+              {t('subtitle')}
             </p>
           </motion.div>
         </div>

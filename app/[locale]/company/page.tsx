@@ -22,7 +22,7 @@ export default function CompanyPage() {
               {t('title')}
             </h1>
             <p className="text-xl text-gray-300">
-              Leading the future of semiconductor inspection and metrology
+              {t('subtitle')}
             </p>
           </motion.div>
         </div>
@@ -43,18 +43,13 @@ export default function CompanyPage() {
             </h2>
             <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-10 shadow-xl">
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                ATI has been at the forefront of semiconductor inspection and metrology technology
-                for over two decades. Our commitment to innovation and excellence has made us a
-                trusted partner for leading semiconductor manufacturers worldwide.
+                {t('ceoMessage1')}
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                We continuously invest in research and development to deliver cutting-edge
-                solutions that meet the evolving needs of the industry. Our global network of
-                experts ensures that our clients receive the highest level of support and service.
+                {t('ceoMessage2')}
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                As we look to the future, we remain dedicated to advancing semiconductor
-                manufacturing through precision, innovation, and unwavering commitment to quality.
+                {t('ceoMessage3')}
               </p>
             </div>
           </motion.div>
@@ -77,12 +72,12 @@ export default function CompanyPage() {
             <div className="space-y-8 relative">
               <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-primary-800/30 hidden md:block" />
               {[
-                { year: '2000', event: 'Company founded in Incheon, South Korea' },
-                { year: '2005', event: 'Expanded to global markets' },
-                { year: '2010', event: 'Launched next-generation inspection systems' },
-                { year: '2015', event: 'Opened offices in key markets worldwide' },
-                { year: '2020', event: 'Achieved industry-leading precision standards' },
-                { year: '2024', event: 'Continuing innovation in AI-powered solutions' },
+                { year: '2000', event: t('historyEvents.2000') },
+                { year: '2005', event: t('historyEvents.2005') },
+                { year: '2010', event: t('historyEvents.2010') },
+                { year: '2015', event: t('historyEvents.2015') },
+                { year: '2020', event: t('historyEvents.2020') },
+                { year: '2024', event: t('historyEvents.2024') },
               ].map((item, index) => (
                 <motion.div
                   key={index}
@@ -122,17 +117,17 @@ export default function CompanyPage() {
             <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-10 shadow-xl">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
-                  { location: 'Headquarters', city: 'Incheon, South Korea' },
-                  { location: 'Asia Pacific', city: 'Singapore, Tokyo, Shanghai' },
-                  { location: 'North America', city: 'San Jose, Austin' },
-                  { location: 'Europe', city: 'Munich, Dublin' },
+                  { key: 'headquarters', city: 'Incheon, South Korea' },
+                  { key: 'asiaPacific', city: 'Singapore, Tokyo, Shanghai' },
+                  { key: 'northAmerica', city: 'San Jose, Austin' },
+                  { key: 'europe', city: 'Munich, Dublin' },
                 ].map((office, index) => (
                   <div
                     key={index}
                     className="p-6 bg-charcoal-950 rounded-lg border border-primary-800/10 hover:border-primary-700/30 transition-all hover:shadow-lg"
                   >
                     <h3 className="text-xl font-bold text-white mb-3">
-                      {office.location}
+                      {t(`offices.${office.key}`)}
                     </h3>
                     <p className="text-gray-400 text-lg">{office.city}</p>
                   </div>

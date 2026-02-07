@@ -61,7 +61,7 @@ export default function CareersClient() {
               {t('title')}
             </h1>
             <p className="text-xl text-gray-300">
-              Join us in shaping the future of semiconductor inspection technology
+              {t('subtitle')}
             </p>
           </motion.div>
         </div>
@@ -78,14 +78,10 @@ export default function CareersClient() {
           <h2 className="text-3xl font-bold text-white mb-6">{t('joinUs')}</h2>
           <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl">
             <p className="text-gray-300 text-lg leading-relaxed mb-4">
-              ATI is a dynamic and innovative company at the forefront of semiconductor inspection
-              and metrology technology. We are looking for talented individuals who are passionate
-              about technology and innovation.
+              {t('joinUsText1')}
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Join our team and be part of a company that values creativity, collaboration, and
-              excellence. We offer a supportive work environment, competitive compensation, and
-              opportunities for professional growth.
+              {t('joinUsText2')}
             </p>
           </div>
         </motion.div>
@@ -119,7 +115,7 @@ export default function CareersClient() {
                     </div>
                   </div>
                   <button className="px-6 py-2 bg-primary-800 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors whitespace-nowrap">
-                    Apply Now
+                    {t('applyNow')}
                   </button>
                 </div>
               </motion.div>
@@ -137,29 +133,21 @@ export default function CareersClient() {
           <h2 className="text-3xl font-bold text-white mb-8">{t('culture')}</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              {
-                title: 'Innovation',
-                description: 'We encourage creative thinking and innovative solutions to complex challenges.',
-              },
-              {
-                title: 'Collaboration',
-                description: 'Teamwork and open communication are at the heart of our success.',
-              },
-              {
-                title: 'Excellence',
-                description: 'We strive for excellence in everything we do, from product development to customer service.',
-              },
-              {
-                title: 'Growth',
-                description: 'We invest in our employees\' professional development and career growth.',
-              },
+              { key: 'innovation' },
+              { key: 'collaboration' },
+              { key: 'excellence' },
+              { key: 'growth' },
             ].map((item, index) => (
               <div
                 key={index}
                 className="p-6 bg-charcoal-900 rounded-xl border border-primary-800/20 shadow-lg"
               >
-                <h3 className="text-xl font-semibold text-white mb-3">{item.title}</h3>
-                <p className="text-gray-400">{item.description}</p>
+                <h3 className="text-xl font-semibold text-white mb-3">
+                  {t(`cultureItems.${item.key}.title`)}
+                </h3>
+                <p className="text-gray-400">
+                  {t(`cultureItems.${item.key}.description`)}
+                </p>
               </div>
             ))}
           </div>
@@ -179,8 +167,12 @@ export default function CareersClient() {
                 className="p-6 bg-charcoal-900 rounded-xl border border-primary-800/20 text-center shadow-lg"
               >
                 <div className="text-4xl mb-4">{benefit.icon}</div>
-                <h3 className="text-lg font-semibold text-white mb-2">{benefit.title}</h3>
-                <p className="text-gray-400 text-sm">{benefit.description}</p>
+                <h3 className="text-lg font-semibold text-white mb-2">
+                  {t(`benefitsItems.${benefit.key}.title`)}
+                </h3>
+                <p className="text-gray-400 text-sm">
+                  {t(`benefitsItems.${benefit.key}.description`)}
+                </p>
               </div>
             ))}
           </div>

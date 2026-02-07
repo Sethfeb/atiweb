@@ -46,7 +46,7 @@ export default function NewsDetailClient({ news }: NewsDetailClientProps) {
               href={`/${locale}/news`}
               className="inline-flex items-center text-primary-500 hover:text-primary-400 transition-colors"
             >
-              ← Back to News
+              {t('backToNews')}
             </Link>
           </motion.div>
         </div>

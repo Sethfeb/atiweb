@@ -54,7 +54,7 @@ export default function ContactPage() {
               {t('title')}
             </h1>
             <p className="text-xl text-gray-300">
-              Get in touch with our team for inquiries and support
+              {t('subtitle')}
             </p>
           </motion.div>
         </div>
@@ -72,7 +72,7 @@ export default function ContactPage() {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
-                  Name *
+                  {t('form.name')} *
                 </label>
                 <input
                   type="text"
@@ -82,13 +82,13 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
-                  placeholder="Your name"
+                  placeholder={t('form.namePlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                  Email *
+                  {t('form.email')} *
                 </label>
                 <input
                   type="email"
@@ -98,13 +98,13 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
-                  placeholder="your.email@example.com"
+                  placeholder={t('form.emailPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="company" className="block text-sm font-medium text-gray-300 mb-2">
-                  Company
+                  {t('form.company')}
                 </label>
                 <input
                   type="text"
@@ -113,13 +113,13 @@ export default function ContactPage() {
                   value={formData.company}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors"
-                  placeholder="Your company"
+                  placeholder={t('form.companyPlaceholder')}
                 />
               </div>
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-300 mb-2">
-                  Subject *
+                  {t('form.subject')} *
                 </label>
                 <select
                   id="subject"
@@ -129,17 +129,17 @@ export default function ContactPage() {
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white focus:outline-none focus:border-primary-600 transition-colors"
                 >
-                  <option value="">Select a subject</option>
-                  <option value="equipment">Equipment Inquiry</option>
-                  <option value="support">Technical Support</option>
-                  <option value="sales">Sales Inquiry</option>
-                  <option value="other">Other</option>
+                  <option value="">{t('form.subjectPlaceholder')}</option>
+                  <option value="equipment">{t('form.subjectOptions.equipment')}</option>
+                  <option value="support">{t('form.subjectOptions.support')}</option>
+                  <option value="sales">{t('form.subjectOptions.sales')}</option>
+                  <option value="other">{t('form.subjectOptions.other')}</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Message *
+                  {t('form.message')} *
                 </label>
                 <textarea
                   id="message"
@@ -149,7 +149,7 @@ export default function ContactPage() {
                   value={formData.message}
                   onChange={handleChange}
                   className="w-full px-4 py-3 bg-charcoal-900 border border-primary-800/20 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-primary-600 transition-colors resize-none"
-                  placeholder="Your message..."
+                  placeholder={t('form.messagePlaceholder')}
                 />
               </div>
 
@@ -158,18 +158,18 @@ export default function ContactPage() {
                 disabled={isSubmitting}
                 className="w-full px-6 py-4 bg-primary-800 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
+                {isSubmitting ? t('form.submitting') : t('form.submit')}
               </button>
 
               {submitStatus === 'success' && (
                 <div className="p-4 bg-green-900/20 border border-green-700/50 rounded-lg text-green-400">
-                  Thank you! Your message has been sent successfully.
+                  {t('form.success')}
                 </div>
               )}
 
               {submitStatus === 'error' && (
                 <div className="p-4 bg-red-900/20 border border-red-700/50 rounded-lg text-red-400">
-                  An error occurred. Please try again later.
+                  {t('form.error')}
                 </div>
               )}
             </form>
@@ -191,7 +191,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Email</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('email')}</h3>
                 <a
                   href="mailto:info@ati2000.co.kr"
                   className="text-primary-500 hover:text-primary-400 transition-colors"
@@ -201,19 +201,19 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Phone</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('phone')}</h3>
                 <p className="text-gray-300">+82-32-XXX-XXXX</p>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Business Hours</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('businessHours')}</h3>
                 <p className="text-gray-300">
-                  Monday - Friday: 9:00 AM - 6:00 PM KST
+                  {t('businessHoursText')}
                 </p>
               </div>
 
               <div className="pt-6 border-t border-charcoal-800">
-                <h3 className="text-xl font-semibold text-white mb-3">Global Offices</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('globalOffices')}</h3>
                 <div className="space-y-2 text-gray-300">
                   <p>• Singapore</p>
                   <p>• Tokyo, Japan</p>

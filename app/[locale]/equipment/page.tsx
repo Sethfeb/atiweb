@@ -1,4 +1,6 @@
 import { setRequestLocale } from 'next-intl/server'
+import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { client } from '@/lib/sanity/client'
 import { equipmentListQuery } from '@/lib/sanity/queries'
 import { sampleEquipment } from '@/lib/data/sample-equipment'
@@ -30,6 +32,7 @@ export default async function EquipmentPage({
 }) {
   const { locale } = await params
   setRequestLocale(locale)
+  const t = await getTranslations('equipment')
   const equipment = await getEquipment()
 
   return (
@@ -39,27 +42,26 @@ export default async function EquipmentPage({
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-              Our Equipment
+              {t('title')}
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Advanced semiconductor inspection and metrology solutions
+              {t('subtitle')}
             </p>
           </div>
         </div>
       </section>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
         {equipment.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {equipment.map((item: any) => (
               <EquipmentCard key={item._id} equipment={item} />
             ))}
           </div>
         ) : (
-          <div className="text-center py-16">
-            <p className="text-gray-400 text-lg">
-              No equipment available at the moment. Please check back later.
+          <div className="text-center py-20">
+            <p className="text-gray-400 text-xl">
+              {t('noEquipment')}
             </p>
           </div>
         )}

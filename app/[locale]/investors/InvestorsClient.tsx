@@ -8,10 +8,10 @@ export default function InvestorsClient() {
   const t = useTranslations('investors')
 
   const financialReports = [
-    { year: '2024', quarter: 'Q4', date: '2024-12-31', type: 'Annual Report' },
-    { year: '2024', quarter: 'Q3', date: '2024-09-30', type: 'Quarterly Report' },
-    { year: '2024', quarter: 'Q2', date: '2024-06-30', type: 'Quarterly Report' },
-    { year: '2024', quarter: 'Q1', date: '2024-03-31', type: 'Quarterly Report' },
+    { year: '2024', quarter: 'Q4', date: '2024-12-31', type: 'annual' },
+    { year: '2024', quarter: 'Q3', date: '2024-09-30', type: 'quarterly' },
+    { year: '2024', quarter: 'Q2', date: '2024-06-30', type: 'quarterly' },
+    { year: '2024', quarter: 'Q1', date: '2024-03-31', type: 'quarterly' },
   ]
 
   const stockInfo = {
@@ -37,7 +37,7 @@ export default function InvestorsClient() {
               {t('title')}
             </h1>
             <p className="text-xl text-gray-300">
-              Committed to creating long-term value for our shareholders
+              {t('subtitle')}
             </p>
           </motion.div>
         </div>
@@ -56,15 +56,15 @@ export default function InvestorsClient() {
               <h2 className="text-2xl font-bold text-white mb-4">{t('stockInfo')}</h2>
               <div className="space-y-4">
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Stock Symbol</div>
+                  <div className="text-sm text-gray-400 mb-1">{t('stockSymbol')}</div>
                   <div className="text-2xl font-bold text-primary-600">{stockInfo.symbol}</div>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Exchange</div>
+                  <div className="text-sm text-gray-400 mb-1">{t('exchange')}</div>
                   <div className="text-lg text-white">{stockInfo.exchange}</div>
                 </div>
                 <div className="pt-4 border-t border-charcoal-800">
-                  <div className="text-sm text-gray-400 mb-1">Current Price</div>
+                  <div className="text-sm text-gray-400 mb-1">{t('currentPrice')}</div>
                   <div className="text-3xl font-bold text-white">{stockInfo.currentPrice} KRW</div>
                   <div className="text-green-400 mt-2">
                     {stockInfo.change} ({stockInfo.changePercent})
@@ -86,14 +86,10 @@ export default function InvestorsClient() {
               <h2 className="text-3xl font-bold text-white mb-6">{t('overview')}</h2>
               <div className="prose prose-invert max-w-none">
                 <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                  ATI is committed to delivering sustainable growth and creating long-term value for
-                  our shareholders. We maintain transparent communication with our investor
-                  community and provide timely updates on our financial performance and strategic
-                  initiatives.
+                  {t('overviewText1')}
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  Our strong financial position and innovative technology portfolio position us well
-                  for continued growth in the semiconductor inspection and metrology market.
+                  {t('overviewText2')}
                 </p>
               </div>
             </motion.div>
@@ -115,12 +111,12 @@ export default function InvestorsClient() {
                   >
                     <div>
                       <div className="text-lg font-semibold text-white">
-                        {report.year} {report.quarter} {report.type}
+                        {report.year} {report.quarter} {t(`reportTypes.${report.type}`)}
                       </div>
-                      <div className="text-sm text-gray-400 mt-1">Date: {report.date}</div>
+                      <div className="text-sm text-gray-400 mt-1">{t('date')}: {report.date}</div>
                     </div>
                     <button className="px-4 py-2 bg-primary-800 text-white font-medium rounded-lg hover:bg-primary-700 transition-colors">
-                      Download PDF
+                      {t('downloadPdf')}
                     </button>
                   </div>
                 ))}
@@ -137,17 +133,21 @@ export default function InvestorsClient() {
               <h2 className="text-3xl font-bold text-white mb-6">{t('governance')}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {[
-                  { title: 'Board of Directors', description: 'Our experienced board provides strategic oversight' },
-                  { title: 'Audit Committee', description: 'Ensuring financial integrity and compliance' },
-                  { title: 'Compensation Committee', description: 'Overseeing executive compensation' },
-                  { title: 'Nominating Committee', description: 'Board composition and governance' },
+                  { key: 'board' },
+                  { key: 'audit' },
+                  { key: 'compensation' },
+                  { key: 'nominating' },
                 ].map((item, index) => (
                   <div
                     key={index}
                     className="p-4 bg-charcoal-950 rounded-lg border border-charcoal-800"
                   >
-                    <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-gray-400 text-sm">{item.description}</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      {t(`governanceItems.${item.key}.title`)}
+                    </h3>
+                    <p className="text-gray-400 text-sm">
+                      {t(`governanceItems.${item.key}.description`)}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -163,11 +163,11 @@ export default function InvestorsClient() {
               <h2 className="text-3xl font-bold text-white mb-6">{t('contact')}</h2>
               <div className="space-y-4">
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Investor Relations</div>
+                  <div className="text-sm text-gray-400 mb-1">{t('irEmail')}</div>
                   <div className="text-lg text-white">ir@ati2000.co.kr</div>
                 </div>
                 <div>
-                  <div className="text-sm text-gray-400 mb-1">Phone</div>
+                  <div className="text-sm text-gray-400 mb-1">{t('phone')}</div>
                   <div className="text-lg text-white">+82-32-XXX-XXXX</div>
                 </div>
               </div>

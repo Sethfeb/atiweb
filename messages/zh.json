@@ -8,6 +8,11 @@
     "careers": "招聘",
     "contact": "联系我们"
   },
+  "languages": {
+    "en": "英语",
+    "ko": "韩语",
+    "zh": "中文"
+  },
   "home": {
     "hero": {
       "title": "先进半导体检测与计量设备",
@@ -31,42 +36,173 @@
   },
   "company": {
     "title": "关于ATI",
+    "subtitle": "引领半导体检测与计量的未来",
     "ceo": "CEO致辞",
+    "ceoMessage1": "ATI在半导体检测与计量技术领域处于前沿地位已有二十多年。我们对创新和卓越的承诺使我们成为全球领先半导体制造商的值得信赖的合作伙伴。",
+    "ceoMessage2": "我们持续投资于研发，以提供满足行业不断变化需求的尖端解决方案。我们的全球专家网络确保客户获得最高水平的支持和服务。",
+    "ceoMessage3": "展望未来，我们仍然致力于通过精确性、创新和对质量的坚定承诺来推进半导体制造。",
     "history": "历史",
-    "network": "全球网络"
+    "historyEvents": {
+      "2000": "公司在韩国仁川成立",
+      "2005": "扩展到全球市场",
+      "2010": "推出下一代检测系统",
+      "2015": "在全球主要市场开设办事处",
+      "2020": "达到行业领先的精度标准",
+      "2024": "持续创新AI驱动的解决方案"
+    },
+    "network": "全球网络",
+    "networkDescription": "我们的全球网络确保无论客户位于何处，我们都能提供服务。",
+    "offices": {
+      "headquarters": "总部",
+      "asiaPacific": "亚太地区",
+      "northAmerica": "北美",
+      "europe": "欧洲"
+    }
   },
   "equipment": {
     "title": "我们的设备",
+    "subtitle": "先进的半导体检测与计量解决方案",
     "viewDetails": "查看详情",
     "specs": "规格",
-    "download": "下载PDF"
+    "download": "下载PDF",
+    "noEquipment": "目前没有可用的设备。请稍后再查看。"
   },
   "investors": {
     "title": "投资者关系",
+    "subtitle": "致力于为股东创造长期价值",
     "overview": "概述",
+    "overviewText1": "ATI致力于提供可持续增长并为股东创造长期价值。我们与投资者社区保持透明沟通，并及时更新我们的财务表现和战略举措。",
+    "overviewText2": "我们强大的财务状况和创新技术组合使我们能够在半导体检测与计量市场持续增长。",
     "financialReports": "财务报告",
     "stockInfo": "股票信息",
+    "stockSymbol": "股票代码",
+    "exchange": "交易所",
+    "currentPrice": "当前价格",
     "governance": "公司治理",
+    "governanceItems": {
+      "board": {
+        "title": "董事会",
+        "description": "我们经验丰富的董事会提供战略监督"
+      },
+      "audit": {
+        "title": "审计委员会",
+        "description": "确保财务完整性和合规性"
+      },
+      "compensation": {
+        "title": "薪酬委员会",
+        "description": "监督高管薪酬"
+      },
+      "nominating": {
+        "title": "提名委员会",
+        "description": "董事会组成和治理"
+      }
+    },
     "events": "活动与演示",
-    "contact": "IR联系"
+    "contact": "IR联系",
+    "irEmail": "投资者关系",
+    "phone": "电话",
+    "downloadPdf": "下载PDF",
+    "reportTypes": {
+      "annual": "年度报告",
+      "quarterly": "季度报告"
+    },
+    "date": "日期"
   },
   "news": {
     "title": "新闻与新闻稿",
+    "subtitle": "随时了解ATI的最新新闻和公告",
     "latest": "最新新闻",
     "pressReleases": "新闻稿",
-    "readMore": "阅读更多"
+    "readMore": "阅读更多",
+    "backToNews": "← 返回新闻"
   },
   "careers": {
     "title": "招聘",
+    "subtitle": "加入我们，共同塑造半导体检测技术的未来",
     "joinUs": "加入我们的团队",
+    "joinUsText1": "ATI是一家处于半导体检测与计量技术前沿的充满活力和创新的公司。我们正在寻找对技术和创新充满热情的优秀人才。",
+    "joinUsText2": "加入我们的团队，成为一家重视创造力、协作和卓越的公司的成员。我们提供支持性的工作环境、有竞争力的薪酬和职业发展机会。",
     "openPositions": "职位空缺",
+    "applyNow": "立即申请",
     "culture": "我们的文化",
-    "benefits": "福利"
+    "cultureItems": {
+      "innovation": {
+        "title": "创新",
+        "description": "我们鼓励创造性思维和针对复杂挑战的创新解决方案。"
+      },
+      "collaboration": {
+        "title": "协作",
+        "description": "团队合作和开放沟通是我们成功的核心。"
+      },
+      "excellence": {
+        "title": "卓越",
+        "description": "我们在从产品开发到客户服务的所有方面都追求卓越。"
+      },
+      "growth": {
+        "title": "成长",
+        "description": "我们投资于员工的职业发展和职业成长。"
+      }
+    },
+    "benefits": "福利",
+    "benefitsItems": {
+      "salary": {
+        "title": "有竞争力的薪资",
+        "description": "具有市场竞争力的薪酬方案"
+      },
+      "health": {
+        "title": "健康保险",
+        "description": "全面的健康和牙科保险"
+      },
+      "development": {
+        "title": "职业发展",
+        "description": "培训和职业成长机会"
+      },
+      "pto": {
+        "title": "带薪休假",
+        "description": "慷慨的假期和节假日政策"
+      },
+      "flexible": {
+        "title": "灵活工作",
+        "description": "工作与生活平衡计划"
+      },
+      "stock": {
+        "title": "股票期权",
+        "description": "股权参与计划"
+      }
+    }
   },
   "contact": {
     "title": "联系我们",
+    "subtitle": "如有任何疑问或需要支持，请联系我们的团队",
     "inquiry": "咨询表单",
     "location": "位置",
-    "hq": "总部"
+    "hq": "总部",
+    "email": "邮箱",
+    "phone": "电话",
+    "businessHours": "营业时间",
+    "businessHoursText": "周一至周五：上午9:00 - 下午6:00 (KST)",
+    "globalOffices": "全球办事处",
+    "form": {
+      "name": "姓名",
+      "namePlaceholder": "请输入您的姓名",
+      "email": "邮箱",
+      "emailPlaceholder": "your.email@example.com",
+      "company": "公司",
+      "companyPlaceholder": "请输入公司名称",
+      "subject": "主题",
+      "subjectPlaceholder": "请选择主题",
+      "subjectOptions": {
+        "equipment": "设备咨询",
+        "support": "技术支持",
+        "sales": "销售咨询",
+        "other": "其他"
+      },
+      "message": "消息",
+      "messagePlaceholder": "请输入消息...",
+      "submit": "发送消息",
+      "submitting": "发送中...",
+      "success": "谢谢！您的消息已成功发送。",
+      "error": "发生错误。请稍后重试。"
+    }
   }
 }

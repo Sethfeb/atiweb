@@ -8,6 +8,11 @@
     "careers": "Careers",
     "contact": "Contact"
   },
+  "languages": {
+    "en": "English",
+    "ko": "Korean",
+    "zh": "Chinese"
+  },
   "home": {
     "hero": {
       "title": "Advanced Semiconductor Inspection & Metrology",
@@ -31,42 +36,173 @@
   },
   "company": {
     "title": "About ATI",
+    "subtitle": "Leading the future of semiconductor inspection and metrology",
     "ceo": "CEO Message",
+    "ceoMessage1": "ATI has been at the forefront of semiconductor inspection and metrology technology for over two decades. Our commitment to innovation and excellence has made us a trusted partner for leading semiconductor manufacturers worldwide.",
+    "ceoMessage2": "We continuously invest in research and development to deliver cutting-edge solutions that meet the evolving needs of the industry. Our global network of experts ensures that our clients receive the highest level of support and service.",
+    "ceoMessage3": "As we look to the future, we remain dedicated to advancing semiconductor manufacturing through precision, innovation, and unwavering commitment to quality.",
     "history": "History",
-    "network": "Global Network"
+    "historyEvents": {
+      "2000": "Company founded in Incheon, South Korea",
+      "2005": "Expanded to global markets",
+      "2010": "Launched next-generation inspection systems",
+      "2015": "Opened offices in key markets worldwide",
+      "2020": "Achieved industry-leading precision standards",
+      "2024": "Continuing innovation in AI-powered solutions"
+    },
+    "network": "Global Network",
+    "networkDescription": "Our global presence ensures that we can serve customers wherever they are located.",
+    "offices": {
+      "headquarters": "Headquarters",
+      "asiaPacific": "Asia Pacific",
+      "northAmerica": "North America",
+      "europe": "Europe"
+    }
   },
   "equipment": {
     "title": "Our Equipment",
+    "subtitle": "Advanced semiconductor inspection and metrology solutions",
     "viewDetails": "View Details",
     "specs": "Specifications",
-    "download": "Download PDF"
+    "download": "Download PDF",
+    "noEquipment": "No equipment available at the moment. Please check back later."
   },
   "investors": {
     "title": "Investor Relations",
+    "subtitle": "Committed to creating long-term value for our shareholders",
     "overview": "Overview",
+    "overviewText1": "ATI is committed to delivering sustainable growth and creating long-term value for our shareholders. We maintain transparent communication with our investor community and provide timely updates on our financial performance and strategic initiatives.",
+    "overviewText2": "Our strong financial position and innovative technology portfolio position us well for continued growth in the semiconductor inspection and metrology market.",
     "financialReports": "Financial Reports",
     "stockInfo": "Stock Information",
+    "stockSymbol": "Stock Symbol",
+    "exchange": "Exchange",
+    "currentPrice": "Current Price",
     "governance": "Corporate Governance",
+    "governanceItems": {
+      "board": {
+        "title": "Board of Directors",
+        "description": "Our experienced board provides strategic oversight"
+      },
+      "audit": {
+        "title": "Audit Committee",
+        "description": "Ensuring financial integrity and compliance"
+      },
+      "compensation": {
+        "title": "Compensation Committee",
+        "description": "Overseeing executive compensation"
+      },
+      "nominating": {
+        "title": "Nominating Committee",
+        "description": "Board composition and governance"
+      }
+    },
     "events": "Events & Presentations",
-    "contact": "IR Contact"
+    "contact": "IR Contact",
+    "irEmail": "Investor Relations",
+    "phone": "Phone",
+    "downloadPdf": "Download PDF",
+    "reportTypes": {
+      "annual": "Annual Report",
+      "quarterly": "Quarterly Report"
+    },
+    "date": "Date"
   },
   "news": {
     "title": "News & Press Releases",
+    "subtitle": "Stay updated with the latest news and announcements from ATI",
     "latest": "Latest News",
     "pressReleases": "Press Releases",
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "backToNews": "← Back to News"
   },
   "careers": {
     "title": "Careers",
+    "subtitle": "Join us in shaping the future of semiconductor inspection technology",
     "joinUs": "Join Our Team",
+    "joinUsText1": "ATI is a dynamic and innovative company at the forefront of semiconductor inspection and metrology technology. We are looking for talented individuals who are passionate about technology and innovation.",
+    "joinUsText2": "Join our team and be part of a company that values creativity, collaboration, and excellence. We offer a supportive work environment, competitive compensation, and opportunities for professional growth.",
     "openPositions": "Open Positions",
+    "applyNow": "Apply Now",
     "culture": "Our Culture",
-    "benefits": "Benefits"
+    "cultureItems": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We encourage creative thinking and innovative solutions to complex challenges."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "Teamwork and open communication are at the heart of our success."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for excellence in everything we do, from product development to customer service."
+      },
+      "growth": {
+        "title": "Growth",
+        "description": "We invest in our employees' professional development and career growth."
+      }
+    },
+    "benefits": "Benefits",
+    "benefitsItems": {
+      "salary": {
+        "title": "Competitive Salary",
+        "description": "Market-competitive compensation packages"
+      },
+      "health": {
+        "title": "Health Insurance",
+        "description": "Comprehensive health and dental coverage"
+      },
+      "development": {
+        "title": "Professional Development",
+        "description": "Training and career growth opportunities"
+      },
+      "pto": {
+        "title": "Paid Time Off",
+        "description": "Generous vacation and holiday policies"
+      },
+      "flexible": {
+        "title": "Flexible Work",
+        "description": "Work-life balance initiatives"
+      },
+      "stock": {
+        "title": "Stock Options",
+        "description": "Equity participation programs"
+      }
+    }
   },
   "contact": {
     "title": "Contact Us",
+    "subtitle": "Get in touch with our team for inquiries and support",
     "inquiry": "Inquiry Form",
     "location": "Location",
-    "hq": "Headquarters"
+    "hq": "Headquarters",
+    "email": "Email",
+    "phone": "Phone",
+    "businessHours": "Business Hours",
+    "businessHoursText": "Monday - Friday: 9:00 AM - 6:00 PM (KST)",
+    "globalOffices": "Global Offices",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your.email@example.com",
+      "company": "Company",
+      "companyPlaceholder": "Your company",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjectOptions": {
+        "equipment": "Equipment Inquiry",
+        "support": "Technical Support",
+        "sales": "Sales Inquiry",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Your message...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Thank you! Your message has been sent successfully.",
+      "error": "An error occurred. Please try again later."
+    }
   }
 }
