@@ -1,3 +1,7 @@
+const createNextIntlPlugin = require('next-intl/plugin')
+
+const withNextIntl = createNextIntlPlugin('./i18n.ts')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Remove output: 'export' to enable Sanity Studio
@@ -15,4 +19,4 @@ const nextConfig = {
   // i18n is handled by next-intl middleware
 }
 
-module.exports = nextConfig
+module.exports = withNextIntl(nextConfig)

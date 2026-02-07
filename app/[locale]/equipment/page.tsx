@@ -1,20 +1,35 @@
+import { setRequestLocale } from 'next-intl/server'
 import { client } from '@/lib/sanity/client'
 import { equipmentListQuery } from '@/lib/sanity/queries'
+import { sampleEquipment } from '@/lib/data/sample-equipment'
 import EquipmentCard from '@/components/Equipment/EquipmentCard'
 
 export const revalidate = 3600 // Revalidate every hour
 
 async function getEquipment() {
-  try {
-    const equipment = await client.fetch(equipmentListQuery)
-    return equipment || []
-  } catch (error) {
-    console.error('Error fetching equipment:', error)
-    return []
+  // Sanity 클라이언트가 설정된 경우 Sanity에서 데이터 가져오기
+  if (client) {
+    try {
+      const equipment = await client.fetch(equipmentListQuery)
+      if (equipment && equipment.length > 0) {
+        return equipment
+      }
+    } catch (error) {
+      console.error('Error fetching equipment:', error)
+    }
   }
+  
+  // Sanity가 없거나 데이터가 없는 경우 샘플 데이터 사용
+  return sampleEquipment
 }
 
-export default async function EquipmentPage() {
+export default async function EquipmentPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
+  setRequestLocale(locale)
   const equipment = await getEquipment()
 
   return (

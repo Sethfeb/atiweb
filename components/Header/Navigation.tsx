@@ -20,7 +20,14 @@ export default function Navigation() {
   ]
 
   const isActive = (href: string) => {
-    return pathname === href || pathname?.startsWith(href + '/')
+    // 홈 경로는 정확히 일치하는지만 확인
+    if (href === `/${locale}` || href === `/${locale}/`) {
+      return pathname === `/${locale}` || pathname === `/${locale}/`
+    }
+    // 다른 경로는 정확히 일치하거나 하위 경로인지 확인
+    const normalizedPathname = pathname?.replace(/\/$/, '') || ''
+    const normalizedHref = href.replace(/\/$/, '')
+    return normalizedPathname === normalizedHref || normalizedPathname.startsWith(normalizedHref + '/')
   }
 
   return (

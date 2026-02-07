@@ -18,7 +18,7 @@ interface EquipmentCardProps {
     slug: {
       current: string
     }
-    mainImage: any
+    mainImage?: any
     category?: string
     description?: {
       en?: string
@@ -35,6 +35,19 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
   const name = equipment.name[locale as 'en' | 'ko' | 'zh'] || equipment.name.en
   const description = equipment.description?.[locale as 'en' | 'ko' | 'zh'] || equipment.description?.en || ''
 
+  // 이미지 URL 생성 (에러 처리 포함)
+  let imageUrl = ''
+  if (equipment.mainImage) {
+    try {
+      const url = urlFor(equipment.mainImage).width(600).height(400).url()
+      if (url && url !== '') {
+        imageUrl = url
+      }
+    } catch (error) {
+      console.error('Error generating image URL:', error)
+    }
+  }
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -44,10 +57,10 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
       className="group bg-charcoal-900 rounded-lg overflow-hidden border border-primary-800/20 hover:border-primary-700/40 transition-all duration-300 hover:shadow-xl"
     >
       <Link href={`/${locale}/equipment/${equipment.slug.current}`}>
-        <div className="relative h-64 overflow-hidden">
-          {equipment.mainImage && (
+        <div className="relative h-64 overflow-hidden bg-charcoal-800">
+          {imageUrl ? (
             <Image
-              src={urlFor(equipment.mainImage).width(600).height(400).url()}
+              src={imageUrl}
               alt={name}
               fill
               className="object-cover group-hover:scale-110 transition-transform duration-300"
@@ -55,6 +68,10 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
               placeholder="blur"
               blurDataURL={getBlurDataURL(600, 400)}
             />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center bg-charcoal-800">
+              <div className="text-4xl text-gray-600">📷</div>
+            </div>
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         </div>
