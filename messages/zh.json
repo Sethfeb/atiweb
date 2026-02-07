@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "首页",
+    "company": "公司介绍",
+    "equipment": "设备",
+    "contact": "联系我们"
+  },
+  "home": {
+    "hero": {
+      "title": "先进半导体检测与计量设备",
+      "subtitle": "面向未来创新的精密技术",
+      "cta": "探索我们的解决方案"
+    },
+    "strengths": {
+      "technology": {
+        "title": "先进技术",
+        "description": "尖端检测与计量解决方案"
+      },
+      "global": {
+        "title": "全球支持",
+        "description": "全球服务与支持网络"
+      },
+      "innovation": {
+        "title": "创新",
+        "description": "持续研发下一代解决方案"
+      }
+    }
+  },
+  "company": {
+    "title": "关于ATI",
+    "ceo": "CEO致辞",
+    "history": "历史",
+    "network": "全球网络"
+  },
+  "equipment": {
+    "title": "我们的设备",
+    "viewDetails": "查看详情",
+    "specs": "规格",
+    "download": "下载PDF"
+  },
+  "contact": {
+    "title": "联系我们",
+    "inquiry": "咨询表单",
+    "location": "位置",
+    "hq": "总部"
+  }
+}

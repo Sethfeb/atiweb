@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "company": "Company",
+    "equipment": "Equipment",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Advanced Semiconductor Inspection & Metrology",
+      "subtitle": "Precision Technology for Tomorrow's Innovation",
+      "cta": "Explore Our Solutions"
+    },
+    "strengths": {
+      "technology": {
+        "title": "Advanced Technology",
+        "description": "Cutting-edge inspection and metrology solutions"
+      },
+      "global": {
+        "title": "Global Support",
+        "description": "Worldwide network of service and support"
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Continuous R&D for next-generation solutions"
+      }
+    }
+  },
+  "company": {
+    "title": "About ATI",
+    "ceo": "CEO Message",
+    "history": "History",
+    "network": "Global Network"
+  },
+  "equipment": {
+    "title": "Our Equipment",
+    "viewDetails": "View Details",
+    "specs": "Specifications",
+    "download": "Download PDF"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "inquiry": "Inquiry Form",
+    "location": "Location",
+    "hq": "Headquarters"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "홈",
+    "company": "회사소개",
+    "equipment": "장비",
+    "contact": "문의하기"
+  },
+  "home": {
+    "hero": {
+      "title": "고급 반도체 검사 및 계측 장비",
+      "subtitle": "미래 혁신을 위한 정밀 기술",
+      "cta": "솔루션 둘러보기"
+    },
+    "strengths": {
+      "technology": {
+        "title": "첨단 기술",
+        "description": "최첨단 검사 및 계측 솔루션"
+      },
+      "global": {
+        "title": "글로벌 지원",
+        "description": "전 세계 서비스 및 지원 네트워크"
+      },
+      "innovation": {
+        "title": "혁신",
+        "description": "차세대 솔루션을 위한 지속적인 연구개발"
+      }
+    }
+  },
+  "company": {
+    "title": "회사 소개",
+    "ceo": "CEO 인사말",
+    "history": "연혁",
+    "network": "글로벌 네트워크"
+  },
+  "equipment": {
+    "title": "우리 장비",
+    "viewDetails": "상세 보기",
+    "specs": "사양",
+    "download": "PDF 다운로드"
+  },
+  "contact": {
+    "title": "문의하기",
+    "inquiry": "문의 양식",
+    "location": "위치",
+    "hq": "본사"
+  }
+}
