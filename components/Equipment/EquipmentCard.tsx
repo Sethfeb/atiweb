@@ -54,10 +54,10 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group bg-slate-900/50 backdrop-blur-sm rounded-xl overflow-hidden border border-primary-500/20 hover:border-primary-400/40 transition-all duration-300 hover:shadow-glow hover:-translate-y-2"
+      className="group bg-charcoal-800 rounded-xl overflow-hidden border border-primary-800/20 hover:border-primary-700/40 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
     >
       <Link href={`/${locale}/equipment/${equipment.slug.current}`}>
-        <div className="relative h-64 overflow-hidden bg-slate-900">
+        <div className="relative h-64 overflow-hidden bg-charcoal-800">
           {imageUrl ? (
             <Image
               src={imageUrl}
@@ -69,15 +69,15 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
               blurDataURL={getBlurDataURL(600, 400)}
             />
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center bg-slate-900">
+            <div className="absolute inset-0 flex items-center justify-center bg-charcoal-800">
               <div className="text-4xl text-gray-600">📷</div>
             </div>
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+          <div className="absolute inset-0 bg-gradient-to-t from-charcoal-800/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         </div>
         <div className="p-8">
           {equipment.category && (
-            <span className="inline-block px-4 py-1.5 text-xs font-semibold text-primary-500 bg-primary-600/20 rounded-full mb-4 uppercase tracking-wide">
+            <span className="inline-block px-4 py-1.5 text-xs font-semibold text-primary-600 bg-primary-800/20 rounded-full mb-4 uppercase tracking-wide">
               {equipment.category}
             </span>
           )}

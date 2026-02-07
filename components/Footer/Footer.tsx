@@ -27,12 +27,12 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-slate-950 border-t border-primary-500/30">
+    <footer className="bg-charcoal-900 border-t border-primary-800/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-primary-500 mb-4">ATI</h3>
+            <h3 className="text-2xl font-bold text-primary-700 mb-4">ATI</h3>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
               Advanced Semiconductor Inspection & Metrology Equipment
             </p>
@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="mt-12 pt-8 border-t border-charcoal-700 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 text-center md:text-left">
             &copy; {new Date().getFullYear()} ATI. All rights reserved.
           </p>
