@@ -10,7 +10,7 @@ export default function CompanyPage() {
   return (
     <div className="min-h-screen bg-charcoal-900">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-900">
+      <section className="relative py-20 bg-hero-overlay">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
