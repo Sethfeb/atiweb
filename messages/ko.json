@@ -3,6 +3,9 @@
     "home": "홈",
     "company": "회사소개",
     "equipment": "장비",
+    "investors": "투자자정보",
+    "news": "뉴스",
+    "careers": "채용",
     "contact": "문의하기"
   },
   "home": {
@@ -37,6 +40,28 @@
     "viewDetails": "상세 보기",
     "specs": "사양",
     "download": "PDF 다운로드"
+  },
+  "investors": {
+    "title": "투자자 정보",
+    "overview": "개요",
+    "financialReports": "재무 보고서",
+    "stockInfo": "주식 정보",
+    "governance": "기업 지배구조",
+    "events": "이벤트 및 발표",
+    "contact": "IR 문의"
+  },
+  "news": {
+    "title": "뉴스 및 보도자료",
+    "latest": "최신 뉴스",
+    "pressReleases": "보도자료",
+    "readMore": "더 보기"
+  },
+  "careers": {
+    "title": "채용",
+    "joinUs": "우리 팀에 합류하세요",
+    "openPositions": "채용 공고",
+    "culture": "우리의 문화",
+    "benefits": "복리후생"
   },
   "contact": {
     "title": "문의하기",

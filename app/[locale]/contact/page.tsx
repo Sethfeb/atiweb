@@ -60,7 +60,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <motion.div
@@ -68,7 +68,7 @@ export default function ContactPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-white mb-6">{t('inquiry')}</h2>
+            <h2 className="text-3xl font-bold text-white mb-8">{t('inquiry')}</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -181,8 +181,8 @@ export default function ContactPage() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-3xl font-bold text-white mb-6">{t('location')}</h2>
-            <div className="bg-charcoal-900 rounded-lg border border-primary-800/20 p-8 space-y-6">
+            <h2 className="text-3xl font-bold text-white mb-8">{t('location')}</h2>
+            <div className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 space-y-6 shadow-xl">
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">{t('hq')}</h3>
                 <p className="text-gray-300">

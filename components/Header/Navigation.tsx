@@ -16,6 +16,9 @@ export default function Navigation() {
     { key: 'home', href: `/${locale}` },
     { key: 'company', href: `/${locale}/company` },
     { key: 'equipment', href: `/${locale}/equipment` },
+    { key: 'investors', href: `/${locale}/investors` },
+    { key: 'news', href: `/${locale}/news` },
+    { key: 'careers', href: `/${locale}/careers` },
     { key: 'contact', href: `/${locale}/contact` },
   ]
 
@@ -33,15 +36,15 @@ export default function Navigation() {
   return (
     <>
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex items-center space-x-8">
+      <nav className="hidden lg:flex items-center space-x-1">
         {navItems.map((item) => (
           <Link
             key={item.key}
             href={item.href}
-            className={`px-3 py-2 text-sm font-medium transition-colors ${
+            className={`px-4 py-2 text-sm font-medium transition-all rounded-md ${
               isActive(item.href)
-                ? 'text-primary-600 border-b-2 border-primary-600'
-                : 'text-gray-300 hover:text-primary-500'
+                ? 'text-primary-600 bg-primary-800/20'
+                : 'text-gray-300 hover:text-primary-500 hover:bg-charcoal-800/50'
             }`}
           >
             {t(item.key)}

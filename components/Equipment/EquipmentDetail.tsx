@@ -46,26 +46,31 @@ export default function EquipmentDetail({ equipment }: EquipmentDetailProps) {
   const description = equipment.description?.[locale as 'en' | 'ko' | 'zh'] || equipment.description?.en || ''
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="mb-12"
-      >
-        {equipment.category && (
-          <span className="inline-block px-4 py-2 text-sm font-semibold text-primary-600 bg-primary-800/20 rounded-full mb-4">
-            {equipment.category}
-          </span>
-        )}
-        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">{name}</h1>
-        {description && (
-          <p className="text-xl text-gray-300 max-w-3xl">{description}</p>
-        )}
-      </motion.div>
+    <div className="min-h-screen bg-charcoal-950">
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-4xl mx-auto"
+          >
+            {equipment.category && (
+              <span className="inline-block px-4 py-2 text-sm font-semibold text-primary-600 bg-primary-800/20 rounded-full mb-6 uppercase tracking-wide">
+                {equipment.category}
+              </span>
+            )}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">{name}</h1>
+            {description && (
+              <p className="text-xl text-gray-300 max-w-3xl leading-relaxed">{description}</p>
+            )}
+          </motion.div>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Image & Gallery */}
         <div className="lg:col-span-2 space-y-4">
           {equipment.mainImage && (
@@ -121,16 +126,16 @@ export default function EquipmentDetail({ equipment }: EquipmentDetailProps) {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-charcoal-900 rounded-lg border border-primary-800/20 p-6"
+              className="bg-charcoal-900 rounded-xl border border-primary-800/20 p-8 shadow-xl"
             >
-              <h2 className="text-2xl font-semibold text-white mb-4">{t('specs')}</h2>
-              <div className="space-y-3">
+              <h2 className="text-3xl font-bold text-white mb-6">{t('specs')}</h2>
+              <div className="space-y-4">
                 {equipment.specifications.map((spec, index) => {
                   const label = spec.label[locale as 'en' | 'ko' | 'zh'] || spec.label.en || ''
                   return (
-                    <div key={index} className="border-b border-charcoal-800 pb-3 last:border-0">
-                      <div className="text-sm text-gray-400 mb-1">{label}</div>
-                      <div className="text-white font-medium">{spec.value}</div>
+                    <div key={index} className="border-b border-charcoal-800 pb-4 last:border-0">
+                      <div className="text-sm text-gray-400 mb-2 font-medium uppercase tracking-wide">{label}</div>
+                      <div className="text-white text-lg font-semibold">{spec.value}</div>
                     </div>
                   )
                 })}
@@ -147,12 +152,13 @@ export default function EquipmentDetail({ equipment }: EquipmentDetailProps) {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="block w-full px-6 py-4 bg-primary-800 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors text-center"
+              className="block w-full px-6 py-4 bg-primary-800 text-white font-semibold rounded-xl hover:bg-primary-700 transition-all shadow-lg hover:shadow-xl text-center"
             >
               {t('download')}
             </motion.a>
           )}
         </div>
+      </div>
       </div>
     </div>
   )

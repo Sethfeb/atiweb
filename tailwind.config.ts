@@ -50,6 +50,11 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'hero-overlay': 'linear-gradient(to bottom, rgba(128, 0, 32, 0.85), rgba(26, 26, 26, 0.9))',
+        'gradient-primary': 'linear-gradient(135deg, rgba(128, 0, 32, 0.1) 0%, rgba(26, 26, 26, 0.9) 100%)',
+      },
+      boxShadow: {
+        'glow': '0 0 20px rgba(128, 0, 32, 0.3)',
+        'glow-lg': '0 0 40px rgba(128, 0, 32, 0.4)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out',

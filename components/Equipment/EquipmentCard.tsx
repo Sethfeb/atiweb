@@ -54,7 +54,7 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group bg-charcoal-900 rounded-lg overflow-hidden border border-primary-800/20 hover:border-primary-700/40 transition-all duration-300 hover:shadow-xl"
+      className="group bg-charcoal-900 rounded-xl overflow-hidden border border-primary-800/20 hover:border-primary-700/40 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
     >
       <Link href={`/${locale}/equipment/${equipment.slug.current}`}>
         <div className="relative h-64 overflow-hidden bg-charcoal-800">
@@ -75,13 +75,13 @@ export default function EquipmentCard({ equipment }: EquipmentCardProps) {
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
         </div>
-        <div className="p-6">
+        <div className="p-8">
           {equipment.category && (
-            <span className="inline-block px-3 py-1 text-xs font-semibold text-primary-600 bg-primary-800/20 rounded-full mb-3">
+            <span className="inline-block px-4 py-1.5 text-xs font-semibold text-primary-600 bg-primary-800/20 rounded-full mb-4 uppercase tracking-wide">
               {equipment.category}
             </span>
           )}
-          <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-primary-500 transition-colors">
+          <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-primary-500 transition-colors">
             {name}
           </h3>
           {description && (

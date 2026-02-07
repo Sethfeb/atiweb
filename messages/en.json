@@ -3,6 +3,9 @@
     "home": "Home",
     "company": "Company",
     "equipment": "Equipment",
+    "investors": "Investors",
+    "news": "News",
+    "careers": "Careers",
     "contact": "Contact"
   },
   "home": {
@@ -37,6 +40,28 @@
     "viewDetails": "View Details",
     "specs": "Specifications",
     "download": "Download PDF"
+  },
+  "investors": {
+    "title": "Investor Relations",
+    "overview": "Overview",
+    "financialReports": "Financial Reports",
+    "stockInfo": "Stock Information",
+    "governance": "Corporate Governance",
+    "events": "Events & Presentations",
+    "contact": "IR Contact"
+  },
+  "news": {
+    "title": "News & Press Releases",
+    "latest": "Latest News",
+    "pressReleases": "Press Releases",
+    "readMore": "Read More"
+  },
+  "careers": {
+    "title": "Careers",
+    "joinUs": "Join Our Team",
+    "openPositions": "Open Positions",
+    "culture": "Our Culture",
+    "benefits": "Benefits"
   },
   "contact": {
     "title": "Contact Us",

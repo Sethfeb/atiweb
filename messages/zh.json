@@ -3,6 +3,9 @@
     "home": "首页",
     "company": "公司介绍",
     "equipment": "设备",
+    "investors": "投资者",
+    "news": "新闻",
+    "careers": "招聘",
     "contact": "联系我们"
   },
   "home": {
@@ -37,6 +40,28 @@
     "viewDetails": "查看详情",
     "specs": "规格",
     "download": "下载PDF"
+  },
+  "investors": {
+    "title": "投资者关系",
+    "overview": "概述",
+    "financialReports": "财务报告",
+    "stockInfo": "股票信息",
+    "governance": "公司治理",
+    "events": "活动与演示",
+    "contact": "IR联系"
+  },
+  "news": {
+    "title": "新闻与新闻稿",
+    "latest": "最新新闻",
+    "pressReleases": "新闻稿",
+    "readMore": "阅读更多"
+  },
+  "careers": {
+    "title": "招聘",
+    "joinUs": "加入我们的团队",
+    "openPositions": "职位空缺",
+    "culture": "我们的文化",
+    "benefits": "福利"
   },
   "contact": {
     "title": "联系我们",

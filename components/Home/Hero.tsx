@@ -10,35 +10,43 @@ export default function Hero() {
   const locale = useLocale()
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 bg-hero-overlay">
-        <div className="absolute inset-0 bg-[url('/images/hero/semiconductor-bg.jpg')] bg-cover bg-center opacity-30" />
+        <div className="absolute inset-0 bg-[url('/images/hero/semiconductor-bg.jpg')] bg-cover bg-center opacity-20" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          className="max-w-5xl mx-auto"
         >
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
             {t('title')}
           </h1>
-          <p className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto">
+          <p className="text-2xl sm:text-3xl md:text-4xl text-gray-200 mb-12 max-w-4xl mx-auto font-light">
             {t('subtitle')}
           </p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Link
               href={`/${locale}/equipment`}
-              className="inline-block px-8 py-4 bg-primary-800 text-white font-semibold rounded-lg hover:bg-primary-700 transition-colors shadow-lg hover:shadow-xl"
+              className="inline-block px-10 py-4 bg-primary-800 text-white font-semibold rounded-lg hover:bg-primary-700 transition-all shadow-xl hover:shadow-2xl hover:scale-105 text-lg"
             >
               {t('cta')}
+            </Link>
+            <Link
+              href={`/${locale}/company`}
+              className="inline-block px-10 py-4 bg-transparent border-2 border-white/30 text-white font-semibold rounded-lg hover:bg-white/10 hover:border-white/50 transition-all text-lg"
+            >
+              Learn More
             </Link>
           </motion.div>
         </motion.div>

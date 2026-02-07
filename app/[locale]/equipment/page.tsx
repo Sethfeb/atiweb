@@ -34,15 +34,21 @@ export default async function EquipmentPage({
 
   return (
     <div className="min-h-screen bg-charcoal-950">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-            Our Equipment
-          </h1>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Advanced semiconductor inspection and metrology solutions
-          </p>
+      {/* Hero Section */}
+      <section className="relative py-20 bg-gradient-to-b from-primary-900/20 to-charcoal-950">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+              Our Equipment
+            </h1>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Advanced semiconductor inspection and metrology solutions
+            </p>
+          </div>
         </div>
+      </section>
+
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
         {equipment.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
